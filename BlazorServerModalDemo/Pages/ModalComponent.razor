@@ -1,6 +1,9 @@
 ﻿@page "/ModalComponent"
-@inject IModalService modal
+
 <h3>Modal Component</h3>
+@inject IModalService modal
+
+<button @onclick="@(() => modal.Show<FetchData>("Just demo"))" class="btn btn-danger"> Open Demo Modal </button>
 
 @code {
 
